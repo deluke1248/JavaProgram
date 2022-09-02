@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="960.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.network.javagroup7.Controller">
+   <children>
+      <HBox layoutX="100.0" layoutY="100.0" prefHeight="500.0" prefWidth="760.0">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #8b0c0c;">
+               <children>
+                  <Text fill="WHITE" layoutX="105.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="94.39999999999998">
+                     <font>
+                        <Font name="Agency FB Bold" size="48.0" />
+                     </font>
+                     <effect>
+                        <Reflection bottomOpacity="0.14" topOffset="-10.0" />
+                     </effect>
+                  </Text>
+                  <Text fill="WHITE" layoutX="15.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_signup" layoutX="202.0" layoutY="437.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Sign Up" textFill="#1e00ff" underline="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_admin" layoutX="11.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Admin" textFill="#f5f0f0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="117.0" fitWidth="241.0" layoutX="19.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/ktu_logo1.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="119.0" layoutY="157.0" prefHeight="188.0" prefWidth="159.0" style="-fx-background-color: #8b0c0c;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="116.0" text="UNIVERSITY" textFill="#faf9f9">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="88.0" text="TECHNICAL" textFill="#faf9f9">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="60.0" text="KOFORIDUA" textFill="#faf9f9">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Circle fill="#1f93ff00" layoutX="152.0" layoutY="271.0" radius="137.0" stroke="#f7f5f5" strokeType="INSIDE" strokeWidth="3.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Circle>
+                  <Line endX="100.0" layoutX="139.0" layoutY="477.0" startX="-100.0" stroke="#f2f0f0" strokeWidth="5.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Line>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="500.0" prefWidth="460.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="btn_login" layoutX="27.0" layoutY="380.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="402.0" style="-fx-background-color: #8b0c0c;" text="Login" textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txt_username" layoutX="27.0" layoutY="200.0" prefHeight="49.0" prefWidth="401.0" promptText="Enter Username" style="-fx-border-color: #993232;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="txt_password" layoutX="29.0" layoutY="297.0" prefHeight="50.0" prefWidth="402.0" promptText="Enter Password" style="-fx-border-color: #993232;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <Button layoutX="22.0" layoutY="149.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Username" textFill="#8b0c0c">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="23.0" layoutY="256.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Password" textFill="#8b0c0c">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="103.0" fitWidth="402.0" layoutX="27.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/head.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="960.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.network.javagroup7.SignUpController">
+   <children>
+      <HBox layoutX="126.0" layoutY="100.0" prefHeight="500.0" prefWidth="760.0">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="460.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="109.0" fitWidth="422.0" layoutX="21.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/head.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txt_fname" layoutX="14.0" layoutY="148.0" prefHeight="39.0" prefWidth="207.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #8b0c0c;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_lname" layoutX="241.0" layoutY="147.0" prefHeight="39.0" prefWidth="207.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-color: #8b0c0c;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_department" layoutX="14.0" layoutY="217.0" prefHeight="39.0" prefWidth="207.0" promptText="Department" style="-fx-background-color: transparent; -fx-border-color: #8b0c0c;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txt_program" layoutX="241.0" layoutY="217.0" prefHeight="39.0" prefWidth="207.0" promptText="Program" style="-fx-background-color: transparent; -fx-border-color: #8b0c0c;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <RadioButton fx:id="rb_male" layoutX="18.0" layoutY="281.0" mnemonicParsing="false" text="Male">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rb_female" layoutX="141.0" layoutY="281.0" mnemonicParsing="false" text="Female">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </RadioButton>
+                  <TextField fx:id="txt_username" layoutX="14.0" layoutY="334.0" prefHeight="39.0" prefWidth="207.0" promptText="UserName" style="-fx-background-color: transparent; -fx-border-color: #8b0c0c;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="txt_password" layoutX="241.0" layoutY="332.0" prefHeight="39.0" prefWidth="207.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #8b0c0c;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="btn_signup" layoutX="19.0" layoutY="414.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="422.0" style="-fx-background-color: #8b0c0c;" text="Submit" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #8b0c0c;">
+               <children>
+                  <Text fill="WHITE" layoutX="16.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have account?">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_login" layoutX="213.0" layoutY="434.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Log in" textFill="#6004ff" underline="true">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Button>
+                  <Line endX="100.0" layoutX="150.0" layoutY="477.0" startX="-100.0" stroke="#f2f0f0" strokeWidth="5.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Line>
+                  <ImageView fitHeight="154.0" fitWidth="262.0" layoutX="14.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/ktu_logo1.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="120.0" layoutY="215.0" prefHeight="144.0" prefWidth="151.0" style="-fx-background-color: #8b0c0c;">
+                     <children>
+                        <Label layoutX="8.0" layoutY="11.0" text="KOFORIDUA" textFill="#f4eded">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="42.0" text="TECHNICAL" textFill="#f4eded">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="8.0" layoutY="69.0" text="UNIVERSITY" textFill="#f4eded">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#1f93ff00" layoutX="24.0" layoutY="43.0" radius="136.0" stroke="#fcf3f3" strokeType="INSIDE" strokeWidth="3.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Circle>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="WHITE" layoutX="74.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" wrappingWidth="146.39999999999998">
+                     <font>
+                        <Font name="Agency FB Bold" size="48.0" />
+                     </font>
+                     <effect>
+                        <Reflection bottomOpacity="0.14" topOffset="-10.0" />
+                     </effect>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
